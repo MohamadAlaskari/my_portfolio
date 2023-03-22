@@ -1,0 +1,27 @@
+.nav-item .nav-link {
+    position: relative;
+    color: red;
+}
+
+.nav-item .nav-link:before {
+    content: "";
+    width: 30%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    bottom: -0px;
+    left: 0;
+    transition: width .5s ease;
+}
+
+
+.active:before {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: #000;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: width .5s ease;
+}

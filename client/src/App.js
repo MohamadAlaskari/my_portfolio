@@ -1,5 +1,4 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Home, AboutMe, Resume, Skills, Projects, Contact } from './pages/indexpages'
@@ -15,7 +14,7 @@ function App() {
         <Header />
         <Container>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
             <Route path="/Aboutme" element={<AboutMe />} />
             <Route path="/Resume" element={<Resume />} />
             <Route path="/Skills" element={<Skills />} />

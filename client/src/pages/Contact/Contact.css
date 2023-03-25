@@ -1,0 +1,46 @@
+.contact-main {
+    background-color: var(--color-bg-dark);
+    height: calc(100vh - 70px);
+    color: var(--color-light);
+}
+
+.wrapper {
+    padding:  calc(var(--margin-primary) / 2) 0;
+}
+
+.contact-main .section-title {
+    margin: calc(var(--margin-primary)*1.5) 0;
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.contact-main .title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-medium);
+}
+
+
+.socialmedia-section {
+    margin: var(--margin-primary) 0;
+}
+
+.socialmedia-section p {
+    font-size: var(--font-size-l);
+    margin: 0;
+}
+
+
+.socialitem {
+    color: var(--color-light);
+    font-size: var(--font-size-xl);
+    margin-left: calc(var(--padding-primary)/2);
+
+}
+
+.socialitem:nth-child(1) {
+    margin-left: 0;
+}
+
+.socialitem:hover {
+    color: var(--color-light);
+}

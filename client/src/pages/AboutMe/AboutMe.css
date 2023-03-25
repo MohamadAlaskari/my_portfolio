@@ -1,0 +1,6 @@
+.aboutme-section h2{
+margin: var(--margin-primary) 0;
+}
+.aboutme-section p{
+margin-bottom:calc(var( --margin-primary)/2) ;
+}

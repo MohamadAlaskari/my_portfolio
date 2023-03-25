@@ -6,21 +6,21 @@ import { NavItem } from '../../components/indexComponents'
 
 const Header = () => {
 
-    const [show, setSchow] = useState(false)
+    const [navActive, setNavActive] = useState(false)
 
     const toggler = () => {
-        setSchow(!show)
+        setNavActive(!navActive)
     }
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg ">
                 <div className="container">
-                    <Link to="./Home" className={'navbar-brand'} >mo.<span>alaskari</span></Link>
+                    <Link to="./Home" className={'navbar-brand'} >mo <span>alaskari</span></Link>
 
-                    <div className="nav-togller burger-menu " onClick={toggler} >
-                        <span className={show ? 'nav-icon menuactive' : "nav-icon "}></span>
+                    <div className="d-lg-none burger-menu " onClick={toggler} type="button" >
+                        <span className={navActive ? ' nav-icon menuactive' : "nav-icon "}></span>
                     </div>
-                    <nav className={show ? 'navbar-collapse' : "navbar-collapse collapse"} >
+                    <div className={navActive ? 'd-lg-inline-flex nav-container ' : "d-lg-inline-flex nav-container nav-show "} >
                         <ul className="navbar-nav ms-auto">
                             <NavItem>
                                 <NavLink to="./Home" className={'nav-link'} onClick={toggler} >Home</NavLink>
@@ -40,21 +40,8 @@ const Header = () => {
                             <NavItem>
                                 <NavLink to="./Contact" className={'nav-link'} onClick={toggler}>Contact</NavLink>
                             </NavItem>
-
-
-                            {/*  <li className="nav-item dropdown">
-                                <NavLink to="./#" className={'nav-link dropdown-toggle'} role="button" data-bs-toggle="dropdown" aria-expanded="false">others</NavLink>
-                                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li>
-                                        <NavLink to="./" className={'dropdown-item'}>Action</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to="./" className={'dropdown-item'}>Action</NavLink>
-                                    </li>
-                                </ul>
-                            </li> */ }
                         </ul>
-                    </nav>
+                    </div>
                 </div>
             </nav>
         </>

@@ -1,7 +1,7 @@
 import './Footer.css'
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <footer><div className="footer-container">created by Mohamad Alaskari</div></footer>
     )
 }
 

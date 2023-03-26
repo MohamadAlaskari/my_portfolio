@@ -30,7 +30,7 @@
     --font-weight-regular: 500;
 
     /*font size*/
-    --font-size-primary: 14px;
+    --font-size-primary: 16px;
     --font-size-xxl: calc(var(--font-size-l) + 36px);
     --font-size-xl: calc(var(--font-size-l) + 20px);
     --font-size-l: calc(var(--font-size-primary) + 10px);

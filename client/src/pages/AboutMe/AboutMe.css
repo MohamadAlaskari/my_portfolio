@@ -1,6 +1,16 @@
-.aboutme-section h2{
-margin: var(--margin-primary) 0;
+
+
+.about-section-row {
+    align-items: center;
 }
-.aboutme-section p{
-margin-bottom:calc(var( --margin-primary)/2) ;
+
+.aboutme-content h2 {
+    margin: var(--margin-primary) 0;
+    font-size: var(--font-size-xxl);
+}
+
+.aboutme-content p {
+    margin-bottom: calc(var(--margin-primary)/2);
+    font-size: var(--font-size-m);
+
 }

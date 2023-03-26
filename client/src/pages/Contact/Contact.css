@@ -1,24 +1,16 @@
-.contact-main {
-    background-color: var(--color-bg-dark);
-    height: calc(100vh - 70px);
-    color: var(--color-light);
-}
 
-.wrapper {
-    padding:  calc(var(--margin-primary) / 2) 0;
-}
-
-.contact-main .section-title {
-    margin: calc(var(--margin-primary)*1.5) 0;
+.contact-content h2{
+    margin:0 0  calc(var(--margin-primary)*1.5) 0;
     font-size: var(--font-size-xxl);
-    font-weight: var(--font-weight-semibold);
 }
 
-.contact-main .title {
+.contact-content h4 {
     font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-medium);
 }
-
+.contact-content a{
+    color: var(--color-primary);
+    font-size: var(--font-size-m);
+}
 
 .socialmedia-section {
     margin: var(--margin-primary) 0;
@@ -30,8 +22,8 @@
 }
 
 
-.socialitem {
-    color: var(--color-light);
+.socialmedia-container a{
+    color: var(--color-primary);
     font-size: var(--font-size-xl);
     margin-left: calc(var(--padding-primary)/2);
 
@@ -42,5 +34,5 @@
 }
 
 .socialitem:hover {
-    color: var(--color-light);
+    color: var(--color-primary);
 }

@@ -4,7 +4,7 @@ import './Container.css'
 const Container = (props) => {
     return (
 
-        <div>
+        <div className='page-container'>
             {props.children}
         </div>
 

@@ -3,7 +3,7 @@ import './Buttons.css'
 const PrimaryButton = (props) => {
     return (
 
-        <Link to="/Contact" className="button button-primary">
+        <Link to={"/Contact"} className="button button-primary">
             {props.children}
         </Link>
 

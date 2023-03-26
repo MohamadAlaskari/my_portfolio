@@ -1,14 +1,14 @@
 import "./AboutMe.css"
 import { PrimaryButton } from "../../components/indexComponents"
-import Profilebild from '../../assest/images/Profilebild.png'
+import Profilebild_02 from '../../assest/images/Profilebild_02.jpg'
 
 const AboutMe = () => {
     return (
         <div className="container">
-            <div className="aboutme-section">
+            <div className="row about-section-row">
+                <div className=" col-md-6">
+                    <div className="aboutme-content">
 
-                <div className="row py-5">
-                    <div className=" col-md-6">
                         <h2 className="title">About Me</h2>
                         <p>
                             Welcome to my website! I'm Mohamad, a 27-year-old student studying
@@ -18,15 +18,16 @@ const AboutMe = () => {
                             I'm motivated to constantly improve my skills to meet my clients'
                             satisfaction. Contact me to use my services
                         </p>
-                        <PrimaryButton>
+                        <PrimaryButton path='\contact'>
                             Hire me
                         </PrimaryButton>
 
                     </div>
-                    <div className=" col-md-6">
-                        <div className="img-container">
-                            <img src={Profilebild} alt="fzk" />
-                        </div>
+
+                </div>
+                <div className=" col-md-6">
+                    <div className="img-container">
+                        <img src={Profilebild_02} alt="fzk" />
                     </div>
                 </div>
             </div>

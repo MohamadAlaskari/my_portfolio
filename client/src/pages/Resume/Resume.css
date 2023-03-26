@@ -1,0 +1,14 @@
+.resume-page {
+    padding: var(--padding-primary) 0;
+}
+
+.resume-page .title {
+    font-size: var(--font-size-xl);
+}
+
+.resume-content h4 {
+    font-weight: 700;
+}
+.resume-content p {
+    padding: calc(var(--padding-primary) / 4)  0;
+}
